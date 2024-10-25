@@ -5,7 +5,7 @@ from typing import Optional
 # Modelo para Libro
 class Libro(Model):
     titulo: str
-    autor_id: ObjectId  # Referencia a la entidad Autor
+    autor_id: ObjectId
     descripcion: Optional[str]
-    imagen_portada: Optional[str]  # URL de la imagen en S3
-    inventario: bool
+    imagen_portada: Optional[str]
+    inventario: int
